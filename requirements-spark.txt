@@ -1,0 +1,8 @@
+# Entorno independiente del dashboard anterior.
+pyspark==3.5.7
+numpy==1.26.4
+plotly==7.1.0
+# La importación de pyspark.ml.functions requiere pandas; el procesamiento sigue en Spark.
+pandas==2.2.3
+# Spark 3.5 importa distutils; setuptools lo proporciona en Python 3.12.
+setuptools==75.8.0

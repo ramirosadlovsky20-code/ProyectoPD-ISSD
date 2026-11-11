@@ -1,0 +1,32 @@
+[2026-11-10T21:06:22.784+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T21:06:20.410405+00:00 [queued]>
+[2026-11-10T21:06:22.790+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T21:06:20.410405+00:00 [queued]>
+[2026-11-10T21:06:22.791+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-11-10T21:06:22.807+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): ejecutar_fase_todas> on 2026-11-10 21:06:20.410405+00:00
+[2026-11-10T21:06:22.812+0000] {standard_task_runner.py:60} INFO - Started process 87 to run task
+[2026-11-10T21:06:22.816+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_pp1_spark_bash', 'ejecutar_fase_todas', 'manual__2026-11-10T21:06:20.410405+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/mi_pirmer_dags.py', '--cfg-path', '/tmp/tmpzg2e_syv']
+[2026-11-10T21:06:22.817+0000] {standard_task_runner.py:88} INFO - Job 7: Subtask ejecutar_fase_todas
+[2026-11-10T21:06:22.844+0000] {task_command.py:423} INFO - Running <TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T21:06:20.410405+00:00 [running]> on host 9c58571049f6
+[2026-11-10T21:06:22.882+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ramiro' AIRFLOW_CTX_DAG_ID='pipeline_pp1_spark_bash' AIRFLOW_CTX_TASK_ID='ejecutar_fase_todas' AIRFLOW_CTX_EXECUTION_DATE='2026-11-10T21:06:20.410405+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-10T21:06:20.410405+00:00'
+[2026-11-10T21:06:22.883+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-11-10T21:06:22.885+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/dags/__main__.py --fase todas']
+[2026-11-10T21:06:22.899+0000] {subprocess.py:86} INFO - Output:
+[2026-11-10T21:06:22.967+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-11-10T21:06:22.967+0000] {subprocess.py:93} INFO -   File "/opt/airflow/dags/__main__.py", line 68, in <module>
+[2026-11-10T21:06:22.968+0000] {subprocess.py:93} INFO -     main()
+[2026-11-10T21:06:22.969+0000] {subprocess.py:93} INFO -   File "/opt/airflow/dags/__main__.py", line 33, in main
+[2026-11-10T21:06:22.970+0000] {subprocess.py:93} INFO -     from session import create_session
+[2026-11-10T21:06:22.970+0000] {subprocess.py:93} INFO -   File "/opt/airflow/dags/session.py", line 3, in <module>
+[2026-11-10T21:06:22.971+0000] {subprocess.py:93} INFO -     from pyspark.sql import SparkSession
+[2026-11-10T21:06:22.971+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'pyspark'
+[2026-11-10T21:06:22.975+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-11-10T21:06:22.982+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-11-10T21:06:22.984+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=pipeline_pp1_spark_bash, task_id=ejecutar_fase_todas, execution_date=20261110T210620, start_date=20261110T210622, end_date=20261110T210622
+[2026-11-10T21:06:22.993+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 7 for task ejecutar_fase_todas (Bash command failed. The command returned a non-zero exit code 1.; 87)
+[2026-11-10T21:06:23.029+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-11-10T21:06:23.037+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

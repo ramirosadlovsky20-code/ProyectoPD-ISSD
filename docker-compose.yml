@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # --- SERVICIO SPARK (Jupyter + Pyspark) ---
+  spark-jupyter:
+    image: jupyter/pyspark-notebook:latest
+    container_name: spark-jupyter
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    volumes:
+      - ./work:/home/jovyan/work
+    networks:
+      - data-network
+
+  # --- SERVICIO APACHE AIRFLOW ---
+  airflow:
+    build: .
+    container_name: airflow-local
+    restart: always
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////tmp/airflow.db
+      - _AIRFLOW_WWW_USER_CREATE=true
+      - _AIRFLOW_WWW_USER_USERNAME=admin
+      - _AIRFLOW_WWW_USER_PASSWORD=admin
+      - JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+    ports:
+      - "8080:8080"
+    command: standalone
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - .:/opt/airflow/project
+    networks:
+      - data-network
+
+networks:
+  data-network:
+    driver: bridge

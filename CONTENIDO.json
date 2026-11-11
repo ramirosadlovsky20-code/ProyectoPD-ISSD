@@ -1,0 +1,300 @@
+{
+  "archivos": [
+    {
+      "archivo": "01_raw_data/BD Escuelas 2011/2011 Matricula y secciones.csv",
+      "bytes": 367099,
+      "sha256": "74c31d376551d8d4300b58bcd5a0edc160b2e4216600f7f6468cdc4b8257026f"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2011/2011 Trayectoria por sexo.csv",
+      "bytes": 879760,
+      "sha256": "ceee53b0a724bdcf51fb291a0c0af39d35141e0fe9fbf0884634098d33dec913"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2011/2011_Establecimiento_Caracteristicas.csv",
+      "bytes": 201253,
+      "sha256": "22c67719040b3c2303dc69d8a0ca9000bfeff1d466dce9038a81edb2174ca887"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2012/2012 Matricula y secciones.csv",
+      "bytes": 367688,
+      "sha256": "663faa70114b8bdd84813e6e47ccbec4a162bfb0086945c07b1a39ddca217eb7"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2012/2012 Trayectoria por sexo.csv",
+      "bytes": 880251,
+      "sha256": "8780c271325a49df71e476d9e570e89d6be17a1e32ea960f0a73ffed0bbb05b0"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2012/2012_Establecimiento_Caracteristicas.csv",
+      "bytes": 206210,
+      "sha256": "bb4b642e68ed630d4acd388450c5b65f3335aae8771e60ea0e1c254140d0c926"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2013/2013 Matricula y secciones.csv",
+      "bytes": 365797,
+      "sha256": "6a970434bd3a337571ffaedabcb32be6fa37301d6930c91c85b0ea71aa2b8df6"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2013/2013 Trayectoria por sexo.csv",
+      "bytes": 873803,
+      "sha256": "7459627350c1fe467aac0a7d1ccc9415304aed4ef07e87f7f6286922745cc33d"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2013/2013_Establecimiento_Caracteristicas.csv",
+      "bytes": 206596,
+      "sha256": "dac37e8db8422cdeb7db2914ff65421a1ed9589c09548143de2a8e19192b13b1"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2014/2014 Matricula y secciones.csv",
+      "bytes": 365770,
+      "sha256": "1193d3cff18b66a535e15a8550031f688a94d859889f9ba692a4a4dae6519f65"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2014/2014 Trayectoria por sexo.csv",
+      "bytes": 872518,
+      "sha256": "0a8540a7330b951e59a669f883d7920ffc23852786c41e6d6e221f985853d084"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2014/2014_Establecimiento_Caracteristicas.csv",
+      "bytes": 209346,
+      "sha256": "3fb41fc80aa3ba189cfe959bfcc7f02e95b7b5ca038bebc37c6a426df44054ca"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2015/2015 Caracteristicas del establecimiento.csv",
+      "bytes": 210151,
+      "sha256": "83d3928ad2d2786c8090f9d0c9a6c34b50e4e0c063b8122cad6d2daa7218d65f"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2015/2015 Matricula y secciones.csv",
+      "bytes": 365978,
+      "sha256": "69e3339be2a468b2101cd6f55e991e37424405a77e65dfbbba61b1483fc5f08c"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2015/2015 Trayectoria por sexo.csv",
+      "bytes": 873503,
+      "sha256": "ccc067c6975afff0e36c54b186691206588dbbed96ea5fe72d7c39e16c272ae7"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2016/2016 Caracteristicas del establecimiento.csv",
+      "bytes": 211551,
+      "sha256": "b7659eb7eeb41003bf1536d0b171f30d021c04b5555fddc86e96012fbdbda24a"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2016/2016 Matricula y secciones.csv",
+      "bytes": 367147,
+      "sha256": "c493c1cbf9f6206c031001535de6a701702bbef48d23ba7a488575f0fa01581f"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2016/2016 Trayectoria pore sexo.csv",
+      "bytes": 875414,
+      "sha256": "1e55806d02a649048a4b2e4f0ca85d053ef749eb0329b896be9d04b1f6e87b95"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2017/2017 Caracteristicas del establecimiento.csv",
+      "bytes": 213973,
+      "sha256": "4b456616f2467b17e392917eb17212ce2bdfb49ff13eba4e06bc9cbdfaa00b11"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2017/2017 Matricula y secciones.csv",
+      "bytes": 368130,
+      "sha256": "93f4537f70a953588c49c1fd6d3eecfe54ef618f0e5a3499d1c1332c2cf55344"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2017/2017 Trayectoria por sexo.csv",
+      "bytes": 875359,
+      "sha256": "3890bb3ee88d5ff0d1d20bbc20c44e25838be8541db9201e3637095affe790b5"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2018/2018 Caracteristicas del establecimiento.csv",
+      "bytes": 215341,
+      "sha256": "182f709892db04c799292aa3c9319e1958510340b22f75867db156fe4d75f49e"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2018/2018 Matricula y secciones.csv",
+      "bytes": 369049,
+      "sha256": "e7b55a87fb193a33de5b2457650842756a5148aa0f3e1961be271a26cca0291c"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2018/2018 Trayectoria por sexo.csv",
+      "bytes": 878197,
+      "sha256": "96c440c5a8a45f560c0607be2d98c0db5fd06daed24b149c129a5c95202e1f99"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2019/2019 Caracteristicas del establecimiento.csv",
+      "bytes": 215589,
+      "sha256": "131d1fe2cbd78ca1daef815d59f59fd50881802ad2d358c619cd4751f90d9f09"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2019/2019 Matricula y secciones.csv",
+      "bytes": 369347,
+      "sha256": "22b7734aa9e9c106e0be3d9435eacd35f8075f41c110bd57d3c026e694929378"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2019/2019 Trayectoria por sexo.csv",
+      "bytes": 878884,
+      "sha256": "d987c0e95cd1d1069ca791272d5b80a3b7e1b3d749c1cdbe944977364bf7d256"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2020/2020 Caracteristicas del establecimiento.csv",
+      "bytes": 216970,
+      "sha256": "552d4a357e7584aa5fb66ee3219e5bc102c8d561ec1a0cebd20ff0bf176191b1"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2020/2020 Matricula y secciones.csv",
+      "bytes": 369025,
+      "sha256": "f1e14674a549adedae8a4b5fd4d36ff0c7f4a18b271b7da9e0652866fe9c4717"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2020/2020 Trayectoria por sexo.csv",
+      "bytes": 878460,
+      "sha256": "71a307744ed2ab39b8f7ebc5e5a47cc91a30929a63c456f8e656df5e8d46a8e0"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2021/2021 Caracteristicas del establecimiento.csv",
+      "bytes": 217130,
+      "sha256": "94b85fc6933bd100e4cd048cdc0c0ee1ee1930c7f02c781f550f064ed5e17156"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2021/2021 Matricula y secciones.csv",
+      "bytes": 364417,
+      "sha256": "071a8e3b4cdbac4e5f82fc8b66919417b7fbdbfbbc3c1d3562036aae15bf187f"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2021/2021 Trayectoria por sexo.csv",
+      "bytes": 866549,
+      "sha256": "dcc6fc569ba97c11a782ef163251d8a3beee6f7b918bbf30f629552fd41ed8c4"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2022/2022 Caracteristicas del establecimiento.csv",
+      "bytes": 218454,
+      "sha256": "4ebeaaa64ff8be392dd7967a4b3c67b9bc0659dc3e51cf2bb591ca3a4a65575e"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2022/2022 Matricula y secciones.csv",
+      "bytes": 369002,
+      "sha256": "e08da6a0647d568abc2e293bfb8e1f9c3e47ad772caeea32035c89c61e2818df"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2022/2022 Trayectoria por sexo.csv",
+      "bytes": 884882,
+      "sha256": "b6e23286c9f3e7a537004672b9a58d7dacb48655e2351d382749ad90530b7a27"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2023/2023 Caracteristicas del establecimiento.csv",
+      "bytes": 220907,
+      "sha256": "29489c60fb54b93dd4bdabf94c16c92776553cf51f578487b8a6eb9a33933ab0"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2023/2023 Matricula y secciones.csv",
+      "bytes": 378167,
+      "sha256": "a8f014137e22bba49a9bfd3adfae8fcca863327b47a2cbeb25e769fa28deb583"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2023/2023 Trayectoria por sexo.csv",
+      "bytes": 935044,
+      "sha256": "8b592843a3805c87902c57ede1dd4f58d1ffbc6ce2c7e8a3a327c98043a3754b"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2024/2024 Caracteristicas del establecimiento.csv",
+      "bytes": 221727,
+      "sha256": "29f8758ea3966a25f54ee42ee724243de8384cb987cd1208899f1559c78eb302"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2024/2024 Matricula y secciones.csv",
+      "bytes": 383049,
+      "sha256": "74ffe1485fc0826a0fda458f4645748d84ed0084249541760d69e0de479db9ef"
+    },
+    {
+      "archivo": "01_raw_data/BD Escuelas 2024/2024 Trayectoria por sexo.csv",
+      "bytes": 938184,
+      "sha256": "958306ecb0916e7000f9c6745f51fe685caf1603eb5bc7ecba10b2b0fe78e060"
+    },
+    {
+      "archivo": "LEEME_RAMA.md",
+      "bytes": 3848,
+      "sha256": "ddb22930a0aac3ab09295731c85ce07d724d8e5f8f192a52e5c324ec9f7a8fa8"
+    },
+    {
+      "archivo": "radar_spark/__init__.py",
+      "bytes": 57,
+      "sha256": "71f86c0bc22b44559a8db45a006f61db16cb6b71720c9795a47f254fd4211647"
+    },
+    {
+      "archivo": "radar_spark/__main__.py",
+      "bytes": 3429,
+      "sha256": "6eba99d93cb092df73b0410bc1bac3d999e105a23f3bba85cf8090e0257849d6"
+    },
+    {
+      "archivo": "radar_spark/cleaning.py",
+      "bytes": 4346,
+      "sha256": "25be260db55449b7e9acdc6aae66a64942040b17e1ab69d5e86ed150fd0672ef"
+    },
+    {
+      "archivo": "radar_spark/config.py",
+      "bytes": 519,
+      "sha256": "1ea5c5cb562a18263718d1e8ad67b8e2f2a0ee7d736bfdf04633fca709ffd8ae"
+    },
+    {
+      "archivo": "radar_spark/eda.py",
+      "bytes": 11757,
+      "sha256": "0cdee9bb8701356489d4436ea74e7ca7b59df4d9bafc635ed3929986e381b7de"
+    },
+    {
+      "archivo": "radar_spark/formatting.py",
+      "bytes": 3162,
+      "sha256": "b876bd72e0fa68688e64185d90600ee41355e811619ae1a3e1e398da4dfb3fc2"
+    },
+    {
+      "archivo": "radar_spark/ml/__init__.py",
+      "bytes": 74,
+      "sha256": "5ee9bec1d435ef44ba85724c8432b51b4125502fee77eca9133fba0cae12c56c"
+    },
+    {
+      "archivo": "radar_spark/ml/datos.py",
+      "bytes": 4219,
+      "sha256": "3da040d5a0b2fb54e566d958baf730faec69652181ed360abe5b4591a93f2d5d"
+    },
+    {
+      "archivo": "radar_spark/ml/entrenamiento.py",
+      "bytes": 4880,
+      "sha256": "2a7340e7d082476180b892358eec3c4797bb0d21e78d7b13271736d7da63c907"
+    },
+    {
+      "archivo": "radar_spark/ml/evaluacion.py",
+      "bytes": 2541,
+      "sha256": "413690b4326276c304d246ac96881ad1fcac0256613a6c44324789632697c32f"
+    },
+    {
+      "archivo": "radar_spark/ml/graficos.py",
+      "bytes": 12229,
+      "sha256": "2e9f458f6c99421ec783c57a4830dd462823e917ddfca25bf1dc03ecea29bef6"
+    },
+    {
+      "archivo": "radar_spark/quality.py",
+      "bytes": 2890,
+      "sha256": "eb720116ee1ba101fa33ddfe580ff2ab8b65637fb2aeb96bb3a3d973a5eafc88"
+    },
+    {
+      "archivo": "radar_spark/session.py",
+      "bytes": 914,
+      "sha256": "45ccd1eb4e932a732de4116370734b3cc36f758c6e2f98de2343772d69119de9"
+    },
+    {
+      "archivo": "requirements-spark.txt",
+      "bytes": 289,
+      "sha256": "d754f6a2762d8e017295b5f5a1147b7a911c94d2217a6dfa254fc4972aa1f98f"
+    },
+    {
+      "archivo": "tests/test_fases.py",
+      "bytes": 7114,
+      "sha256": "58ff7e72834b85a51a297834eeb78fbd250779a9c0402aa6585fef8b52507da1"
+    },
+    {
+      "archivo": "tests/test_ml.py",
+      "bytes": 3484,
+      "sha256": "f45784707edcfe735abae50b797f0b109cb336a27f93fb497696e71823257f38"
+    }
+  ],
+  "fuentes_csv": 42
+}

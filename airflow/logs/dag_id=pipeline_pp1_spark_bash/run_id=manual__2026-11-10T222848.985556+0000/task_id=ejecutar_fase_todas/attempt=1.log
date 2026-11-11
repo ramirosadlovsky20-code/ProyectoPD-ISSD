@@ -1,0 +1,67 @@
+[2026-11-10T22:28:52.352+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T22:28:48.985556+00:00 [queued]>
+[2026-11-10T22:28:52.359+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T22:28:48.985556+00:00 [queued]>
+[2026-11-10T22:28:52.360+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-11-10T22:28:52.372+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): ejecutar_fase_todas> on 2026-11-10 22:28:48.985556+00:00
+[2026-11-10T22:28:52.382+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_pp1_spark_bash', 'ejecutar_fase_todas', 'manual__2026-11-10T22:28:48.985556+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/mi_pirmer_dags.py', '--cfg-path', '/tmp/tmpwa2pjizx']
+[2026-11-10T22:28:52.380+0000] {standard_task_runner.py:60} INFO - Started process 785 to run task
+[2026-11-10T22:28:52.385+0000] {standard_task_runner.py:88} INFO - Job 7: Subtask ejecutar_fase_todas
+[2026-11-10T22:28:52.426+0000] {task_command.py:423} INFO - Running <TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T22:28:48.985556+00:00 [running]> on host 5ee6346ad2aa
+[2026-11-10T22:28:52.490+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ramiro' AIRFLOW_CTX_DAG_ID='pipeline_pp1_spark_bash' AIRFLOW_CTX_TASK_ID='ejecutar_fase_todas' AIRFLOW_CTX_EXECUTION_DATE='2026-11-10T22:28:48.985556+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-10T22:28:48.985556+00:00'
+[2026-11-10T22:28:52.492+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-11-10T22:28:52.493+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/dags/__main__.py --fase todas']
+[2026-11-10T22:28:52.504+0000] {subprocess.py:86} INFO - Output:
+[2026-11-10T22:28:53.348+0000] {subprocess.py:93} INFO - WARNING: Using incubator modules: jdk.incubator.vector
+[2026-11-10T22:28:54.686+0000] {subprocess.py:93} INFO - Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+[2026-11-10T22:28:54.687+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2026-11-10T22:28:54.687+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2026-11-10T22:28:55.388+0000] {subprocess.py:93} INFO - 26/11/10 22:28:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-11-10T22:28:58.489+0000] {subprocess.py:93} INFO - ¡Spark inició correctamente!
+[2026-11-10T22:28:58.489+0000] {subprocess.py:93} INFO - FASE 02: 02_formateo
+[2026-11-10T22:29:04.940+0000] {subprocess.py:93} INFO - 26/11/10 22:29:04 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[2026-11-10T22:29:11.862+0000] {subprocess.py:93} INFO - [Stage 14:>                                                        (0 + 4) / 14][Stage 14:================>                                        (4 + 4) / 14][Stage 14:====================>                                    (5 + 4) / 14][Stage 14:================================>                        (8 + 4) / 14][Stage 14:================================================>       (12 + 2) / 14][Stage 14:====================================================>   (13 + 1) / 14]                                                                                  matricula_secciones: 16803 filas, 100 columnas
+[2026-11-10T22:29:17.310+0000] {subprocess.py:93} INFO - 26/11/10 22:29:17 WARN DAGScheduler: Broadcasting large task binary with size 1257.8 KiB
+[2026-11-10T22:29:22.875+0000] {subprocess.py:93} INFO - [Stage 33:>                                                        (0 + 4) / 14][Stage 33:====>                                                    (1 + 5) / 14][Stage 33:================>                                        (4 + 4) / 14][Stage 33:============================>                            (7 + 4) / 14][Stage 33:================================>                        (8 + 4) / 14][Stage 33:============================================>           (11 + 3) / 14][Stage 33:================================================>       (12 + 2) / 14][Stage 33:====================================================>   (13 + 1) / 14]                                                                                  trayectoria_por_sexo: 16702 filas, 269 columnas
+[2026-11-10T22:29:29.295+0000] {subprocess.py:93} INFO - [Stage 52:================>                                        (4 + 4) / 14][Stage 52:================================>                        (8 + 4) / 14][Stage 52:================================================>       (12 + 2) / 14]                                                                                  caracteristicas: 16804 filas, 66 columnas
+[2026-11-10T22:29:29.296+0000] {subprocess.py:93} INFO - FASE 03: 03_limpieza
+[2026-11-10T22:29:33.483+0000] {subprocess.py:93} INFO - [Stage 58:>                                                         (0 + 4) / 4][Stage 58:==============>                                           (1 + 3) / 4][Stage 58:===========================================>              (3 + 1) / 4]                                                                                  matricula_secciones: 16803 filas, 93 columnas
+[2026-11-10T22:29:39.292+0000] {subprocess.py:93} INFO - [Stage 64:>                                                         (0 + 4) / 4][Stage 64:==============>                                           (1 + 3) / 4][Stage 64:=============================>                            (2 + 2) / 4][Stage 64:===========================================>              (3 + 1) / 4]                                                                                  trayectoria_por_sexo: 16702 filas, 165 columnas
+[2026-11-10T22:29:43.177+0000] {subprocess.py:93} INFO - [Stage 70:>                                                         (0 + 4) / 4][Stage 70:==============>                                           (1 + 3) / 4][Stage 70:===========================================>              (3 + 1) / 4]                                                                                  caracteristicas: 16804 filas, 66 columnas
+[2026-11-10T22:29:43.179+0000] {subprocess.py:93} INFO - FASE 04: 04_calidad
+[2026-11-10T22:29:48.651+0000] {subprocess.py:93} INFO - [Stage 91:>                                                         (0 + 4) / 4][Stage 91:==============>                                           (1 + 3) / 4]                                                                                  matricula_secciones: 16803 filas, 93 columnas
+[2026-11-10T22:29:53.228+0000] {subprocess.py:93} INFO - [Stage 96:>                                                         (0 + 4) / 4][Stage 96:=============================>                            (2 + 2) / 4]                                                                                    Valores atípicos (no eliminados): 26911
+[2026-11-10T22:29:56.896+0000] {subprocess.py:93} INFO - [Stage 118:==============>                                          (1 + 3) / 4][Stage 118:==========================================>              (3 + 1) / 4]                                                                                  trayectoria_por_sexo: 16702 filas, 165 columnas
+[2026-11-10T22:30:00.523+0000] {subprocess.py:93} INFO - [Stage 123:>                                                        (0 + 4) / 4][Stage 123:==============>                                          (1 + 3) / 4]26/11/10 22:30:00 WARN DAGScheduler: Broadcasting large task binary with size 1231.7 KiB
+[2026-11-10T22:30:04.439+0000] {subprocess.py:93} INFO - [Stage 125:>                                                        (0 + 1) / 1]                                                                                [Stage 126:>                                                        (0 + 4) / 4]                                                                                    Valores atípicos (no eliminados): 51292
+[2026-11-10T22:30:06.775+0000] {subprocess.py:93} INFO -   caracteristicas: 16804 filas, 66 columnas
+[2026-11-10T22:30:09.774+0000] {subprocess.py:93} INFO - [Stage 147:>                                                        (0 + 4) / 4][Stage 147:==============>                                          (1 + 3) / 4]                                                                                    Valores atípicos (no eliminados): 18706
+[2026-11-10T22:30:09.775+0000] {subprocess.py:93} INFO - FASE eda: 06_eda
+[2026-11-10T22:30:12.799+0000] {subprocess.py:93} INFO -   tendencia: 336 filas
+[2026-11-10T22:30:13.941+0000] {subprocess.py:93} INFO -   flujo_por_sexo: 336 filas
+[2026-11-10T22:30:14.991+0000] {subprocess.py:93} INFO -   promocion_por_sexo: 56 filas
+[2026-11-10T22:30:16.837+0000] {subprocess.py:93} INFO -   sobreedad_segmentos: 16576 filas
+[2026-11-10T22:30:18.330+0000] {subprocess.py:93} INFO -   sobreedad_provincias: 24 filas
+[2026-11-10T22:30:20.215+0000] {subprocess.py:93} INFO - [Stage 202:>                                                        (0 + 4) / 4]                                                                                  infraestructura: 6246 filas
+[2026-11-10T22:30:22.128+0000] {subprocess.py:93} INFO -   perfil_riesgo: 8 filas
+[2026-11-10T22:30:22.129+0000] {subprocess.py:93} INFO - FASE ml: 07_ml
+[2026-11-10T22:30:22.559+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-11-10T22:30:22.559+0000] {subprocess.py:93} INFO -   File "/opt/airflow/dags/__main__.py", line 68, in <module>
+[2026-11-10T22:30:22.561+0000] {subprocess.py:93} INFO -     main()
+[2026-11-10T22:30:22.561+0000] {subprocess.py:93} INFO -   File "/opt/airflow/dags/__main__.py", line 42, in main
+[2026-11-10T22:30:22.562+0000] {subprocess.py:93} INFO -     from ml.entrenamiento import ejecutar_ml
+[2026-11-10T22:30:22.563+0000] {subprocess.py:93} INFO -   File "/opt/airflow/dags/ml/entrenamiento.py", line 11, in <module>
+[2026-11-10T22:30:22.564+0000] {subprocess.py:93} INFO -     from .datos import VARIABLES, preparar_datos
+[2026-11-10T22:30:22.565+0000] {subprocess.py:93} INFO -   File "/opt/airflow/dags/ml/datos.py", line 5, in <module>
+[2026-11-10T22:30:22.567+0000] {subprocess.py:93} INFO -     from ..config import CLAVES
+[2026-11-10T22:30:22.568+0000] {subprocess.py:93} INFO - ImportError: attempted relative import beyond top-level package
+[2026-11-10T22:30:23.113+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-11-10T22:30:23.119+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-11-10T22:30:23.123+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=pipeline_pp1_spark_bash, task_id=ejecutar_fase_todas, execution_date=20261110T222848, start_date=20261110T222852, end_date=20261110T223023
+[2026-11-10T22:30:23.136+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 7 for task ejecutar_fase_todas (Bash command failed. The command returned a non-zero exit code 1.; 785)
+[2026-11-10T22:30:23.173+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-11-10T22:30:23.181+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

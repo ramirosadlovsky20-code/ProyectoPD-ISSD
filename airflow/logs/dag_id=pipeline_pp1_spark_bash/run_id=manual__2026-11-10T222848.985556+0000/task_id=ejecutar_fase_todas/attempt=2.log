@@ -1,0 +1,28 @@
+[2026-11-10T22:32:25.388+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T22:28:48.985556+00:00 [queued]>
+[2026-11-10T22:32:25.393+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T22:28:48.985556+00:00 [queued]>
+[2026-11-10T22:32:25.394+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2026-11-10T22:32:25.411+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): ejecutar_fase_todas> on 2026-11-10 22:28:48.985556+00:00
+[2026-11-10T22:32:25.417+0000] {standard_task_runner.py:60} INFO - Started process 2136 to run task
+[2026-11-10T22:32:25.420+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_pp1_spark_bash', 'ejecutar_fase_todas', 'manual__2026-11-10T22:28:48.985556+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/mi_pirmer_dags.py', '--cfg-path', '/tmp/tmpcjjezq7j']
+[2026-11-10T22:32:25.422+0000] {standard_task_runner.py:88} INFO - Job 8: Subtask ejecutar_fase_todas
+[2026-11-10T22:32:25.464+0000] {task_command.py:423} INFO - Running <TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T22:28:48.985556+00:00 [running]> on host 5ee6346ad2aa
+[2026-11-10T22:32:25.504+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ramiro' AIRFLOW_CTX_DAG_ID='pipeline_pp1_spark_bash' AIRFLOW_CTX_TASK_ID='ejecutar_fase_todas' AIRFLOW_CTX_EXECUTION_DATE='2026-11-10T22:28:48.985556+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-10T22:28:48.985556+00:00'
+[2026-11-10T22:32:25.506+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-11-10T22:32:25.506+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/dags/__main__.py --fase todas']
+[2026-11-10T22:32:25.517+0000] {subprocess.py:86} INFO - Output:
+[2026-11-10T22:32:25.564+0000] {subprocess.py:93} INFO - usage: __main__.py [-h] [--fase {02,03,04,eda,ml,todas}]
+[2026-11-10T22:32:25.565+0000] {subprocess.py:93} INFO -                    [--years YEARS [YEARS ...]] [--data-dir DATA_DIR]
+[2026-11-10T22:32:25.566+0000] {subprocess.py:93} INFO -                    [--output-dir OUTPUT_DIR]
+[2026-11-10T22:32:25.566+0000] {subprocess.py:93} INFO - __main__.py: error: Ya existe /opt/airflow/project/outputs/spark/02_formateo. Elegí otra salida para conservar los resultados.
+[2026-11-10T22:32:25.568+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2026-11-10T22:32:25.573+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2026-11-10T22:32:25.577+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=pipeline_pp1_spark_bash, task_id=ejecutar_fase_todas, execution_date=20261110T222848, start_date=20261110T223225, end_date=20261110T223225
+[2026-11-10T22:32:25.596+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 8 for task ejecutar_fase_todas (Bash command failed. The command returned a non-zero exit code 2.; 2136)
+[2026-11-10T22:32:25.634+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-11-10T22:32:25.644+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

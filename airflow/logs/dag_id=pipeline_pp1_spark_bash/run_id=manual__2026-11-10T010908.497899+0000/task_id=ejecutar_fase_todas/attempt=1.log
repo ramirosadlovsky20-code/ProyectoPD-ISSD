@@ -1,0 +1,26 @@
+[2026-11-10T01:09:11.184+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T01:09:08.497899+00:00 [queued]>
+[2026-11-10T01:09:11.189+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T01:09:08.497899+00:00 [queued]>
+[2026-11-10T01:09:11.190+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-11-10T01:09:11.200+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): ejecutar_fase_todas> on 2026-11-10 01:09:08.497899+00:00
+[2026-11-10T01:09:11.206+0000] {standard_task_runner.py:60} INFO - Started process 294 to run task
+[2026-11-10T01:09:11.210+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_pp1_spark_bash', 'ejecutar_fase_todas', 'manual__2026-11-10T01:09:08.497899+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/mi_pirmer_dags.py', '--cfg-path', '/tmp/tmpiucl25pu']
+[2026-11-10T01:09:11.212+0000] {standard_task_runner.py:88} INFO - Job 13: Subtask ejecutar_fase_todas
+[2026-11-10T01:09:11.251+0000] {task_command.py:423} INFO - Running <TaskInstance: pipeline_pp1_spark_bash.ejecutar_fase_todas manual__2026-11-10T01:09:08.497899+00:00 [running]> on host b3d9abd654de
+[2026-11-10T01:09:11.288+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ramiro' AIRFLOW_CTX_DAG_ID='pipeline_pp1_spark_bash' AIRFLOW_CTX_TASK_ID='ejecutar_fase_todas' AIRFLOW_CTX_EXECUTION_DATE='2026-11-10T01:09:08.497899+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-10T01:09:08.497899+00:00'
+[2026-11-10T01:09:11.289+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-11-10T01:09:11.291+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'apt-get update && apt-get install -y openjdk-11-jre-headless && export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 && python /opt/airflow/dags/__main__.py --fase todas']
+[2026-11-10T01:09:11.302+0000] {subprocess.py:86} INFO - Output:
+[2026-11-10T01:09:11.373+0000] {subprocess.py:93} INFO - Reading package lists...
+[2026-11-10T01:09:11.376+0000] {subprocess.py:93} INFO - E: List directory /var/lib/apt/lists/partial is missing. - Acquire (13: Permission denied)
+[2026-11-10T01:09:11.377+0000] {subprocess.py:97} INFO - Command exited with return code 100
+[2026-11-10T01:09:11.384+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 100.
+[2026-11-10T01:09:11.386+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=pipeline_pp1_spark_bash, task_id=ejecutar_fase_todas, execution_date=20261110T010908, start_date=20261110T010911, end_date=20261110T010911
+[2026-11-10T01:09:11.395+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 13 for task ejecutar_fase_todas (Bash command failed. The command returned a non-zero exit code 100.; 294)
+[2026-11-10T01:09:11.423+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-11-10T01:09:11.432+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
