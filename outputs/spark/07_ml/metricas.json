@@ -1,0 +1,189 @@
+{
+  "configuracion": {
+    "objetivo": "Tasa de salidas sin pase del siguiente archivo anual superior al umbral de entrenamiento",
+    "variables": [
+      "indice_abandono_secundaria",
+      "tasa_sobreedad_secundaria",
+      "es_estatal",
+      "es_rural"
+    ],
+    "umbral_porcentaje": 4.671218109953288,
+    "percentil_entrenamiento": 0.75,
+    "error_relativo_cuantil": 0.001,
+    "anio_objetivo_entrenamiento": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "anio_objetivo_validacion": [
+      2022
+    ],
+    "anio_objetivo_prueba": [
+      2023,
+      2024
+    ],
+    "distribucion": {
+      "entrenamiento": {
+        "normal": 8264,
+        "elevada": 2769,
+        "total": 11033
+      },
+      "validacion": {
+        "normal": 982,
+        "elevada": 138,
+        "total": 1120
+      },
+      "prueba": {
+        "normal": 2031,
+        "elevada": 203,
+        "total": 2234
+      }
+    },
+    "regla_clase": "1 si tasa_siguiente > umbral; 0 en otro caso",
+    "departamentos_enmascarados": "Excluidos antes del cruce temporal",
+    "alcance_temporal": "Años de las carpetas fuente; no se afirma disponibilidad en tiempo real",
+    "capas_mlp": [
+      4,
+      8,
+      2
+    ],
+    "semilla": 42,
+    "max_iteraciones": 100,
+    "reg_param_logistica": 0.01
+  },
+  "validacion": {
+    "regresion_logistica": {
+      "filas": 1120,
+      "accuracy": 0.8901785714285714,
+      "precision_clase_1": 0.8,
+      "recall_clase_1": 0.14492753623188406,
+      "f1_clase_1": 0.245398773006135,
+      "auc_pr": 0.4786826491605723,
+      "auc_roc": 0.8564117890138424,
+      "matriz_confusion": {
+        "tn": 977,
+        "fp": 5,
+        "fn": 118,
+        "tp": 20
+      }
+    },
+    "mlp": {
+      "filas": 1120,
+      "accuracy": 0.8848214285714285,
+      "precision_clase_1": 0.68,
+      "recall_clase_1": 0.12318840579710146,
+      "f1_clase_1": 0.20858895705521474,
+      "auc_pr": 0.4527236347808611,
+      "auc_roc": 0.8322153841612829,
+      "matriz_confusion": {
+        "tn": 974,
+        "fp": 8,
+        "fn": 121,
+        "tp": 17
+      }
+    },
+    "persistencia": {
+      "filas": 1120,
+      "accuracy": 0.8866071428571428,
+      "precision_clase_1": 0.6341463414634146,
+      "recall_clase_1": 0.18840579710144928,
+      "f1_clase_1": 0.29050279329608936,
+      "auc_pr": 0.4431827848844414,
+      "auc_roc": 0.8065947932347476,
+      "matriz_confusion": {
+        "tn": 967,
+        "fp": 15,
+        "fn": 112,
+        "tp": 26
+      }
+    },
+    "clase_mayoritaria": {
+      "filas": 1120,
+      "accuracy": 0.8767857142857143,
+      "precision_clase_1": 0.0,
+      "recall_clase_1": 0.0,
+      "f1_clase_1": 0.0,
+      "auc_pr": 0.12321428571428572,
+      "auc_roc": 0.5,
+      "matriz_confusion": {
+        "tn": 982,
+        "fp": 0,
+        "fn": 138,
+        "tp": 0
+      }
+    }
+  },
+  "prueba": {
+    "regresion_logistica": {
+      "filas": 2234,
+      "accuracy": 0.9136078782452999,
+      "precision_clase_1": 0.5510204081632653,
+      "recall_clase_1": 0.2660098522167488,
+      "f1_clase_1": 0.3588039867109635,
+      "auc_pr": 0.48890632909928716,
+      "auc_roc": 0.9071230896474091,
+      "matriz_confusion": {
+        "tn": 1987,
+        "fp": 44,
+        "fn": 149,
+        "tp": 54
+      }
+    },
+    "mlp": {
+      "filas": 2234,
+      "accuracy": 0.9167412712623098,
+      "precision_clase_1": 0.5648854961832062,
+      "recall_clase_1": 0.3645320197044335,
+      "f1_clase_1": 0.4431137724550898,
+      "auc_pr": 0.4739319774479782,
+      "auc_roc": 0.8977292847562305,
+      "matriz_confusion": {
+        "tn": 1974,
+        "fp": 57,
+        "fn": 129,
+        "tp": 74
+      }
+    },
+    "persistencia": {
+      "filas": 2234,
+      "accuracy": 0.9028648164726947,
+      "precision_clase_1": 0.4717741935483871,
+      "recall_clase_1": 0.5763546798029556,
+      "f1_clase_1": 0.5188470066518848,
+      "auc_pr": 0.4591443376924126,
+      "auc_roc": 0.8853824828459368,
+      "matriz_confusion": {
+        "tn": 1900,
+        "fp": 131,
+        "fn": 86,
+        "tp": 117
+      }
+    },
+    "clase_mayoritaria": {
+      "filas": 2234,
+      "accuracy": 0.9091316025067144,
+      "precision_clase_1": 0.0,
+      "recall_clase_1": 0.0,
+      "f1_clase_1": 0.0,
+      "auc_pr": 0.09086839749328558,
+      "auc_roc": 0.5,
+      "matriz_confusion": {
+        "tn": 2031,
+        "fp": 0,
+        "fn": 203,
+        "tp": 0
+      }
+    }
+  },
+  "seleccion": {
+    "modelo": "regresion_logistica",
+    "criterio": "Mayor AUC-PR en validación; empate favorece regresión logística"
+  }
+}
